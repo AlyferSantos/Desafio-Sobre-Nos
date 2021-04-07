@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid orangered;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    /* padding: 10px 0 5px 0; Para top right bottom  esquerda*/ 
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+}
+
+.navtitulo{
+    cursor: pointer;
+    float: left;
+    margin: 0px;
+}
+
+.navbar li {
+    float:left;
+    margin-left: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.navbar li:hover{
+    color: orangered;
+    transition: all 600ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px orangered;
+    background-color: transparent;
+   }
+
+   .navbar a:hover{
+    color: orangered;
+    transition: all 600ms;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px orangered;
+    background-color: transparent;
+   }
+
+
+
+.destaque{
+    color: orangered;
+}
+
+.banner{
+padding-top: 70px;
+text-align: center;
+background-image: url(img/sobre.jpeg);
+background-color:grey;
+background-repeat: no-repeat;
+background-size: cover;
+background-position-y: -250px;
+height: 225px;
+filter: brightness(125%);
+}
+
+.banner h1{
+    margin:0;
+    font-size: 40px;
+    padding-top: 39px;
+}
+
+
+.saiba-mais{
+text-align: center;
+background-color: black;
+height: 70px;
+}
+
+
+
+
+.box img{
+       height: 100px;
+       border-radius: 60%;
+}
+
+.box {
+       overflow: auto;
+}
+
+.box-item {
+float: left;
+text-align: center;
+width:96%;
+padding: 2%;
+}
+
+.footer {
+    text-align: center;
+    background-color: orangered;
+    height: 80px;
+}
+
+.footer h3 {
+    margin: 0;
+    padding-top: 33px;
+    font-weight: 100;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+}
