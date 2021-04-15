@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+    <style>
+        .meu-grafico {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="meu-grafico">
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var ctx = document.getElementById('myChart');
+    var meuGrafico = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["jan", "fev", "mar", "abr", "mai", "jun"],
+            datasets: [
+                {
+                    label: "Rendimentos 2021",
+                    data: [6000, 2000, 5000, 4000, 11000, 9000],
+                    borderWidth: 4,
+                    borderColor: 'rgba(255, 69, 0, .7)',
+                    backgroundColor: 'rgba(255, 69, 0, .6)',
+                },
+
+                {
+                    type: 'line',
+                    label: "Rendimentos 2020",
+                    data: [4000, 11000, 6000, 6000, 2000, 7000],
+                    borderWidth: 5,
+                    borderColor: 'rgba(150, 0, 0, 1)',
+                    backgroundColor: 'transparent'
+                }
+            ]
+        },
+
+        options: {
+
+            title: {
+                display: true,
+                fontSize: 40,
+                text: "Meus rendimentos",
+                position: 'top',
+            },
+            legend: {
+                display: true,
+                reverse: true,
+                position: 'bottom'
+            },
+            layout: {
+                padding: {
+                    left: 50,
+                    top: 50
+                },
+
+            }
+        }
+    })
+
+    Chart.defaults.global.defaultFontColor = "#ff4500";
+</script>
